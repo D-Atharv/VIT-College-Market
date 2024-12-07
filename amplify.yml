@@ -1,0 +1,15 @@
+version: 1
+applications:
+  - frontend:
+      phases:
+        preBuild:
+          commands: []
+        build:
+          commands:
+            - echo "No build steps required for static files"
+      artifacts:
+        baseDirectory: . # Root folder of static files
+        files:
+          - '**/*'
+      cache:
+        paths: []
